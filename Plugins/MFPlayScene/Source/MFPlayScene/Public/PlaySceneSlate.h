@@ -13,7 +13,7 @@ class FSceneViewport;
 * Custom Viewport client, where we have access to canvas on Draw function.
 * This is the place where we issue canvas draw call to present SceneCaptureComponent Texture to custom window
 */
-class FPlaySceneViewportClient : public FViewportClient
+class MFPLAYSCENE_API FPlaySceneViewportClient : public FViewportClient
 {
 public:
 	/** FViewportClient interface */
@@ -32,7 +32,7 @@ public:
 /**
  * Implements the Play Capture viewport
  */
-class SPlaySceneViewport : public SCompoundWidget
+class MFPLAYSCENE_API SPlaySceneViewport : public SCompoundWidget
 {
 public:
 
@@ -60,7 +60,7 @@ public:
 * This is main container class, which is create Play Capture Window
 * And it assign rendering Viewport for the Window
 */
-class FPlaySceneSlate
+class MFPLAYSCENE_API FPlaySceneSlate
 {
 public:
 	FPlaySceneSlate();

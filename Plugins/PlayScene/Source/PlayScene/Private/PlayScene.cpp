@@ -52,16 +52,6 @@ void FPlaySceneModule::ShutdownModule()
 	FPlaySceneSlate::Shutdown();
 }
 
-TWeakObjectPtr<UTextureRenderTarget2D> FPlaySceneModule::GetTextureRenderTarget2D()
-{
-	return TextureRenderTarget2D;
-}
-
-void FPlaySceneModule::SetTextureRenderTarget2D(UTextureRenderTarget2D * TexRenderTarget2D)
-{
-	TextureRenderTarget2D = TexRenderTarget2D;
-}
-
 
 void FPlaySceneModule::PluginButtonClicked()
 {

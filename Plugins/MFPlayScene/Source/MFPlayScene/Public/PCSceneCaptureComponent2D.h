@@ -10,7 +10,7 @@
  * 
  */
 UCLASS(hidecategories = (Collision, Object, Physics, SceneComponent), ClassGroup = Rendering, editinlinenew, meta = (BlueprintSpawnableComponent))
-class PLAYSCENE_API UPCSceneCaptureComponent2D : public USceneCaptureComponent2D
+class MFPLAYSCENE_API UPCSceneCaptureComponent2D : public USceneCaptureComponent2D
 {
 	GENERATED_BODY()
 

@@ -13,6 +13,11 @@ class AUE4MultiWindowGameMode : public AGameModeBase
 
 public:
 	AUE4MultiWindowGameMode();
+
+	virtual void BeginPlay() override;
+
+	virtual void EndPlay(EEndPlayReason::Type Reason) override;
+
 };
 
 

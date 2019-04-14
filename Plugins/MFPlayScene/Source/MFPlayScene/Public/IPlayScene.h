@@ -26,7 +26,7 @@ public:
 	 */
 	static inline IPlayScene& Get()
 	{
-		return FModuleManager::LoadModuleChecked< IPlayScene >("PlayScene");
+		return FModuleManager::LoadModuleChecked< IPlayScene >("MFPlayScene");
 	}
 
 	/**
@@ -36,7 +36,7 @@ public:
 	 */
 	static inline bool IsAvailable()
 	{
-		return FModuleManager::Get().IsModuleLoaded("PlayScene");
+		return FModuleManager::Get().IsModuleLoaded("MFPlayScene");
 	}
 
 

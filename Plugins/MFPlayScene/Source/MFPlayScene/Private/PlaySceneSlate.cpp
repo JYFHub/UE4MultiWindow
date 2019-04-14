@@ -124,8 +124,15 @@ void FPlaySceneSlate::Shutdown()
 {
 	if (PlaySceneSlate.IsValid())
 	{
+		if (FPlaySceneSlate::PlaySceneSlate.Get()->PlaySceneWindow.IsValid())
+		{
+			FPlaySceneSlate::PlaySceneSlate.Get()->PlaySceneWindow.Get()->DestroyWindowImmediately();
+
+			FPlaySceneSlate::PlaySceneSlate.Get()->PlaySceneWindow.Reset();
+			FPlaySceneSlate::PlaySceneSlate.Get()->PlaySceneWindow = nullptr;
+		}
 		FPlaySceneSlate::PlaySceneSlate.Reset();
-		FPlaySceneSlate::PlaySceneSlate = nullptr;;
+		FPlaySceneSlate::PlaySceneSlate = nullptr;
 	}
 }
 

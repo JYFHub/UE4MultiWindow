@@ -11,7 +11,7 @@ class FMenuBuilder;
 /**
 * Plagin Module class
 */
-class FPlaySceneModule : public IPlayScene
+class FPlaySceneModule : public IModuleInterface
 {
 public:
 
@@ -19,10 +19,6 @@ public:
 	virtual void StartupModule() override;
 	virtual void ShutdownModule() override;
 
-	/** IPlayScene implementation */
-	virtual TWeakObjectPtr<UTextureRenderTarget2D> GetTextureRenderTarget2D() override;
-	virtual void SetTextureRenderTarget2D(UTextureRenderTarget2D* TexRenderTarget2D) override;
-	
 	/** This function will be bound to Command (by default it will bring up plugin window) */
 	void PluginButtonClicked();
 	
